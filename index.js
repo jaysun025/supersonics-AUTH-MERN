@@ -13,6 +13,5 @@ app.use(express.urlencoded({extended: false}))
 app.use('/api', require('./controllers/users'))
 
 app.listen(process.env.PORT || 8000, ()=>{
-    console.log('process.env.PORT', process.env.PORT)
     console.log('superonics MERN AUTH 8000')
 })
