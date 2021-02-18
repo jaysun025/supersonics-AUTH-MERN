@@ -53,4 +53,6 @@ const createUserToken = (req, user) => {
     }
 }
 
-module.exports = { createUserToken }
+const requireToken = passport.authenticate('jwt', {session: false})
+
+module.exports = { createUserToken, requireToken }
