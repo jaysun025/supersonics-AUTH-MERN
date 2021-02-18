@@ -3,6 +3,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
+
 // allows us to use res.json
 app.use(express.json())
 // allows access from all origins
